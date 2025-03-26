@@ -18,16 +18,25 @@ body {
 	max-height: 40px;
 	width: auto;
 }
+
 .header-wrap-clone {
     height: 38px;
 }
 
 .menu-type-primary > .menu-item > .menu-link {
-	color: #676767;
+	/* color: #676767; */
 }
 
 .menu-type-secondary > .menu-item > .menu-link {
-	color: #676767;
+	/* color: #676767; */
+}
+
+.heading-block {
+	--cnvs-heading-block-border: 3px solid #405ad5 !important;
+}
+
+.heading-block::after {
+	width: 50px !important;
 }
 
 .sub-menu.menu-link {
@@ -41,6 +50,24 @@ body {
 
 #top-search-trigger i {
     color: #676767 !important;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px; 
+    text-align: center;
+    padding: 10px; 
+}
+
+.fbox-image img {
+    max-width: 90%;  
+    max-height: 120px; 
+    width: auto !important;
+    height: auto;
+    object-fit: contain;
+    margin: 5px auto; 
 }
 
 /* Footer CSS */
