@@ -13,36 +13,34 @@ body {
 }
 
 /* Header CSS */
-.is-expanded-menu .full-header #logo {
-	border: 0px !important;
-}
-.is-expanded-menu .full-header .primary-menu .menu-container {
-	border: 0px !important;
-}
-
-@media (min-width: 1200px) {
-    #logo img {
-        max-height: 70px;
-    }
-}
-
-@media (min-width: 1200px) {
-    #logo img {
-        max-width: inherit;
-        max-height: 80px;
-        width: auto;
-    }
-}
-
 #logo img {
-    max-width: 100%;
-    height: auto;
+	max-width: inherit;
+	max-height: 40px;
+	width: auto;
+}
+.header-wrap-clone {
+    height: 38px;
 }
 
-#logo img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
+.menu-type-primary > .menu-item > .menu-link {
+	color: #676767;
+}
+
+.menu-type-secondary > .menu-item > .menu-link {
+	color: #676767;
+}
+
+.sub-menu.menu-link {
+	padding: 30px 15px !important;
+}
+
+/* Search Styles */
+.top-search-form input {
+    font-size: 16px;
+}
+
+#top-search-trigger i {
+    color: #676767 !important;
 }
 
 /* Footer CSS */
@@ -123,4 +121,50 @@ body {
 .social-icon.si-small {
 	--cnvs-socialicon-size: 1.5rem !important;;
 	--cnvs-socialicon-fontsize: 0.675rem !important;
+}
+
+/* ----------------------------------------------------------------
+    Responsive Design Styles
+-----------------------------------------------------------------*/
+
+/* Large Screens (992px and up) */
+@media (min-width: 992px) {
+	.menu-type-primary {
+		font-size: 1.125rem;
+	}
+
+	.header-misc>.header-misc-icon:nth-child(1) {
+		border-left: 1px solid #dee2e6;
+	}
+}
+
+/* Tablet & Mobile Screens (Below 992px) */
+@media (max-width: 992px) {
+	#logo  {
+		padding: 15px 0px;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {	
+	#logo img {
+		max-width: inherit;
+		max-height: 30px;
+		width: auto;
+	}
+
+	#logo  {
+		padding: 15px 0px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 991px) {
+
+}
+
+/* Ipad Pro */
+@media (width: 1024px) {
+
+   
 }
