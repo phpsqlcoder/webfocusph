@@ -1,0 +1,27 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+:root {
+	--cnvs-themecolor:	#405ad5 !important;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+/* Header CSS */
+.is-expanded-menu .full-header #logo {
+	border: 0px !important;
+}
+
+#footer {
+	background-color: #405ad5 !important;
+}
+
+h2 {
+	color: #fff !important;
+	font: 700 18px 'Work Sans';
+}
