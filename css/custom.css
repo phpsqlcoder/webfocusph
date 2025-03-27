@@ -6,6 +6,7 @@
 -----------------------------------------------------------------*/
 :root {
 	--cnvs-themecolor: #405ad5 !important;
+	--cnvs-themecolor-rgb: 64, 90, 213 !important;
 }
 
 body {
@@ -20,19 +21,11 @@ body {
 }
 
 .header-wrap-clone {
-    height: 38px;
-}
-
-.menu-type-primary > .menu-item > .menu-link {
-	/* color: #676767; */
-}
-
-.menu-type-secondary > .menu-item > .menu-link {
-	/* color: #676767; */
+	height: 38px;
 }
 
 .heading-block {
-	--cnvs-heading-block-border: 3px solid #405ad5 !important;
+	/* --cnvs-heading-block-border: 3px solid #405ad5 !important; */
 }
 
 .heading-block::after {
@@ -45,29 +38,29 @@ body {
 
 /* Search Styles */
 .top-search-form input {
-    font-size: 16px;
+	font-size: 16px;
 }
 
 #top-search-trigger i {
-    color: #676767 !important;
+	color: #676767 !important;
 }
 
 .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px; 
-    text-align: center;
-    padding: 10px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	text-align: center;
+	padding: 10px;
 }
 
 .fbox-image img {
-    max-width: 90%;  
-    max-height: 120px; 
-    width: auto !important;
-    height: auto;
-    object-fit: contain;
-    margin: 5px auto; 
+	max-width: 90%;
+	max-height: 120px;
+	width: auto !important;
+	height: auto;
+	object-fit: contain;
+	margin: 5px auto;
 }
 
 /* Footer CSS */
@@ -146,7 +139,8 @@ body {
 }
 
 .social-icon.si-small {
-	--cnvs-socialicon-size: 1.5rem !important;;
+	--cnvs-socialicon-size: 1.5rem !important;
+	;
 	--cnvs-socialicon-fontsize: 0.675rem !important;
 }
 
@@ -167,31 +161,109 @@ body {
 
 /* Tablet & Mobile Screens (Below 992px) */
 @media (max-width: 992px) {
-	#logo  {
+	#logo {
 		padding: 15px 0px;
 	}
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media (max-width: 600px) {	
+@media (max-width: 600px) {
 	#logo img {
 		max-width: inherit;
 		max-height: 30px;
 		width: auto;
 	}
 
-	#logo  {
+	#logo {
 		padding: 15px 0px;
 	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 600px) and (max-width: 991px) {
-
-}
+@media (min-width: 600px) and (max-width: 991px) {}
 
 /* Ipad Pro */
-@media (width: 1024px) {
+@media (width: 1024px) {}
 
-   
+.dotted-bg:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: 150%;
+	height: 150%;
+	background-size: 12px 12px;
+	background-position: center;
+	transform: translate(-50%, -50%);
+	background-image: radial-gradient(rgba(233, 196, 106, 0.3) 14%, transparent 14%);
+	-webkit-mask-image: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 75%);
+	mask-image: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 75%);
+	z-index: 0;
+}
+
+.services-grid .feature-box {
+	padding: 2rem;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: .5rem;
+	border: 1px solid var(--cnvs-secondary-color);
+}
+
+.services-grid .feature-box:hover {
+	background-size: cover;
+}
+
+.hover-button {
+	display: block;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+.dark .hover-button {
+	color: #FFF;
+}
+
+.services-grid .feature-box {
+	background-color: #405ad5;
+}
+
+.dark .services-grid .feature-box .fbox-icon i {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+.services-grid .feature-box,
+.services-grid .feature-box .fbox-icon,
+.services-grid .feature-box .fbox-content,
+.hover-button {
+	transition: all .4s ease, border-color .0s ease;
+}
+
+.services-grid .feature-box {
+	padding: 3rem;
+	background-size: 0;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.services-grid .feature-box:hover {
+	transform: translateY(-6px);
+	border-color: #405ad5;
+}
+
+.services-grid .feature-box:not(:hover) .hover-button {
+	opacity: 0;
+	transform: translateY(-5px);
+}
+
+.services-grid .feature-box .fbox-icon,
+.services-grid .feature-box .fbox-content {
+	font-size: 14px !important;
+	transform: translateY(20px);
+}
+
+.services-grid .feature-box:hover .fbox-icon,
+.services-grid .feature-box:hover .fbox-content {
+	transform: translateY(0px);
 }
